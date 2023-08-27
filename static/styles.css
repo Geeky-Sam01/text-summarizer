@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #e3f2fd;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  #input-area {
+    margin-top: 20px;
+  }
+  
+  .form-control {
+    resize: vertical;
+  }
+  
+  .btn-primary {
+    margin-top: 10px;
+  }
+  
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 45%;
+  }
+  
+  .text {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  .text-length {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+  }
+.text-section h2{
+    font-size: 2rem;
+    text-decoration-line: underline;
+}
+.about_app{
+    margin-top: 2rem;
+    font-size: 1rem;
+    
+}
+.small-error {
+    display: inline-block;
+    max-width: 10%rem; /* Set the maximum width as per your preference */
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    color: #721c24;
+    font-size: 14px;
+  }
+  

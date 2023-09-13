@@ -33,7 +33,7 @@ def score_sentences(select_tokens, tfidf_scores):
 
 
 
-def generate_summzary(rawdocs,selection_percentage=0.3):
+def generate_summary(rawdocs,selection_percentage=0.3):
     nlp=spacy.load('en_core_web_sm')
     doc=nlp(rawdocs)
     

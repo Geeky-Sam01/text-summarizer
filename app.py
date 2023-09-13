@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from text_summ2 import generate_summzary
+from text_summ2 import generate_summary
 
 app = Flask(__name__)
 
@@ -14,7 +14,7 @@ def analyze():
         if rawtext.strip() == "":
             error_message = 'Please enter some text to summarize.'
             return render_template('index.html', error_message=error_message)
-        final_summary, original_text, len_original, len_summary = generate_summzary(rawtext)
+        final_summary, original_text, len_original, len_summary = generate_summary(rawtext)
         return render_template('summary.html', final_summary=final_summary, original_text=original_text, len_original=len_original, len_summary=len_summary)
 
 @app.route('/about')

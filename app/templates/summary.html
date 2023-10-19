@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+{%block title%}Analyze{%endblock%}
+{%block content%}
+      <div class="container" style="display: flex; justify-content: space-around;">
+        <div class="text-section">
+          <h2>Original Text</h2>
+          <p class="text">{{original_text}}</p>
+          <p class="text-length">Length: {{len_original}}</p>
+        </div>
+      
+        <div class="text-section">
+          <h2>Summary</h2>
+          <p class="text">{{final_summary}}</p>
+          <p class="text-length">Length: {{len_summary}}</p>
+        </div>
+      </div>
+      <div class="container text-center mt-2">
+        <a class="btn btn-primary" href="/" role="button">Analyze New</a>
+      </div>
+{%endblock%}

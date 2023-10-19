@@ -15,6 +15,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 def calculating_tfidf_scores(tokens):
     stopwords=list(STOP_WORDS)
+    # remove punctuations and stopwords while performing lemmatization
     cleaned_tokens= [token.lemma_.lower() for token in tokens if token.text.lower() not in stopwords and token.text.lower() not in punctuation]
     cleaned_tokens=' '.join(cleaned_tokens)
     tfidf=TfidfVectorizer()

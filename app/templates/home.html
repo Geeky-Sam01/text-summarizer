@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+{%block title%}Analyze{%endblock%}
+{%block content%}
+      <div class="container text-center">
+        {% if error_message %}
+        <div class="alert alert-danger mt-3 small-error">{{ error_message }}</div>
+        {% endif %}
+      </div>
+      
+      <div class="container mt-3" style="margin-top: 5rem;" id="input-area">
+        <form action="/analyze" method="post">
+          <textarea name="rawtext" class="form-control" rows="9" placeholder="Enter your Text"></textarea>
+          <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+      </div>
+{%endblock%}
